@@ -44,11 +44,14 @@ const links = [
 
 function Sidebar() {
   return (
-    <div className="w-67 h-full flex flex-col border-r border-slate-950 bg-slate-900">
+    <div
+      className="w-67 flex flex-col border-r border-slate-950 bg-slate-900 fixed top-0
+      left-0 h-screen "
+    >
       <p className="px-4 py-6 text-3xl font-bold text-gray-200 ">
         Code Tracker
       </p>
-      <div className="flex felx-row p-4 gap-3 items-center ">
+      <div className="flex felx-row p-4 gap-3 items-center w-full">
         <div className="flex justify-center items-center rounded-full w-20 h-20 bg-white border border-slate-950">
           <img
             src={profileImg}
