@@ -45,7 +45,7 @@ const links = [
 function Sidebar() {
   return (
     <div
-      className="w-67 flex flex-col border-r border-slate-950 bg-slate-900 fixed top-0
+      className="w-70 flex flex-col border-r border-slate-950 bg-slate-900 fixed top-0
       left-0 h-screen "
     >
       <p className="px-4 py-6 text-3xl font-bold text-gray-200 ">

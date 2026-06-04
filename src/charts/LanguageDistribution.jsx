@@ -72,20 +72,14 @@ const chartConfig = {
   },
 };
 
-  const fruits = [
-    { label: "Apple", value: "apple" },
-    { label: "Banana", value: "banana" },
-    { label: "Blueberry", value: "blueberry" },
-  ]
-  const vegetables = [
-    { label: "Carrot", value: "carrot" },
-    { label: "Broccoli", value: "broccoli" },
-    { label: "Spinach", value: "spinach" },
+  const projects = [
+    { label: "notes", value: "carrot" },
+    { label: "website-shop", value: "website-shop" },
+    { label: "code-track", value: "code-track" },
   ]
     const allItems = [
-      { label: "Select a fruit", value: null },
-      ...fruits,
-      ...vegetables,
+      { label: "Select a Project", value: null },
+      ...projects
     ];
 
 export default function LanguageDistribution() {
@@ -100,21 +94,13 @@ export default function LanguageDistribution() {
           <SelectContent>
             <SelectGroup>
               <SelectLabel>Fruits</SelectLabel>
-              {fruits.map((item) => (
+              {projects.map((item) => (
                 <SelectItem key={item.value} value={item.value}>
                   {item.label}
                 </SelectItem>
               ))}
             </SelectGroup>
             <SelectSeparator />
-            <SelectGroup>
-              <SelectLabel>Vegetables</SelectLabel>
-              {vegetables.map((item) => (
-                <SelectItem key={item.value} value={item.value}>
-                  {item.label}
-                </SelectItem>
-              ))}
-            </SelectGroup>
           </SelectContent>
         </Select>
       </CardHeader>

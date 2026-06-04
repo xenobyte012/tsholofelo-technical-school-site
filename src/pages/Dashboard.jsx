@@ -34,7 +34,7 @@ function Dashboard() {
   ];
 
   return (
-    <div className="bg-slate-800 h-full flex text-gray-200 ml-67 ">
+    <div className="bg-slate-800 h-full flex text-gray-200 ml-70 ">
       <div>
         <Sidebar />
       </div>
@@ -77,7 +77,7 @@ function Dashboard() {
               <ProjectLeaderboard />
             </div>
           </div>
-          <div className=" mt-12 grid grid-col h-auto grid-cols-2 gap-12">
+          <div className=" mt-12 grid grid-col h-auto grid-cols-[1fr_2fr] gap-12">
 
             <div>
               <ActiveProjects />
