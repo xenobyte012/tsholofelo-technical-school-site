@@ -11,5 +11,7 @@ tailwindcss(),
 alias: {
     "@": path.resolve(__dirname, "./src"),
 },
+base: '/tsholofelo-technical-school-site/',
 },
+
 })
