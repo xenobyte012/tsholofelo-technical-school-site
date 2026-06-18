@@ -120,7 +120,7 @@ const Contact = () => {
 
               <h3 className="text-xl font-bold mb-2">Email Us</h3>
 
-              <p className="text-slate-600">tsholofelotechweb@gmail.com</p>
+              <p className="text-slate-600">600105439@nwed.gov.za</p>
             </div>
 
             {/* Phone */}
@@ -131,11 +131,7 @@ const Contact = () => {
 
               <h3 className="text-xl font-bold mb-2">Call Us</h3>
 
-              <p className="text-slate-600">
-                063 881 9869
-                <br />
-                071 345 8605
-              </p>
+              <p className="text-slate-600">064 984 2708</p>
             </div>
           </div>
         </section>

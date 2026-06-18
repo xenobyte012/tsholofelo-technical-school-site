@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { CalendarDays, ArrowRight } from "lucide-react";
-
+import news_img from "../img/news.jpg"
 const newsData = [
   {
     id: 1,
@@ -62,15 +62,12 @@ const News = () => {
       <main className="bg-slate-50 min-h-screen">
         {/* Hero */}
         <section className="relative h-[350px]">
-          <img
-            src="/IMAGES/school-image.jpg"
-            alt="School News"
-            className="absolute inset-0 w-full h-full object-cover"
-          />
+          
+            <img src={news_img} />
 
-          <div className="absolute inset-0 bg-black/60 flex items-center justify-center">
+          <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
             <div className="text-center text-white px-4">
-              <h1 className="text-5xl font-bold mb-4">School News</h1>
+
 
               <p className="max-w-2xl mx-auto text-slate-200">
                 Stay informed about the latest activities, achievements and
@@ -93,11 +90,8 @@ const News = () => {
         <section className="max-w-7xl mx-auto px-4 pb-16">
           <div className="bg-white rounded-3xl overflow-hidden shadow-lg">
             <div className="grid md:grid-cols-2">
-              <img
-                src="/IMAGES/school-image.jpg"
-                alt="Featured"
-                className="w-full h-full object-cover min-h-[350px]"
-              />
+              
+                src="/IMAGES/sch
 
               <div className="p-10 flex flex-col justify-center">
                 <span className="bg-amber-100 text-amber-700 px-3 py-1 rounded-full text-sm w-fit">
@@ -135,11 +129,8 @@ const News = () => {
                 key={news.id}
                 className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all hover:-translate-y-1"
               >
-                <img
-                  src={news.image}
-                  alt={news.title}
-                  className="w-full h-56 object-cover"
-                />
+                
+
 
                 <div className="p-6">
                   <div className="flex items-center gap-2 text-slate-500 text-sm mb-3">

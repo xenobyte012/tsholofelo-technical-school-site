@@ -1,7 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "@/components/Footer";
 import { FaFacebook } from "react-icons/fa";
+import logo from "../img/logo.jpg"
 
 import {
 
@@ -11,6 +13,7 @@ import {
   School,
 } from "lucide-react";
 
+
 const Home = () => {
   return (
     <div className="min-h-screen bg-slate-50 flex flex-col font-sans text-slate-800">
@@ -19,9 +22,9 @@ const Home = () => {
 
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="relative w-full h-[500px] md:h-[650px] overflow-hidden">
+        <section className="relative w-full h-[500px] md:h-[650px] overflow-hidden pb-10">
           <img
-            src="/images/school-image.jpg"
+            src={logo}
             alt="Tsholofelo Technical Secondary School"
             className="absolute inset-0 w-full h-full object-cover"
           />
@@ -45,7 +48,7 @@ const Home = () => {
                 Apply Now
               </button>
 
-              <button className="border border-white text-white hover:bg-white hover:text-slate-900 px-8 py-3 rounded-lg font-semibold transition">
+              <button className="border border-white text-white hover:bg-white hover:text-slate-900 px-8 py-3 rounded-lg font-semibold transition" >
                 Learn More
               </button>
             </div>
@@ -73,13 +76,13 @@ const Home = () => {
 
               <div>
                 <Award className="mx-auto text-amber-600 mb-3" size={40} />
-                <h3 className="text-3xl font-bold">95%</h3>
+                <h3 className="text-3xl font-bold">97%</h3>
                 <p className="text-slate-600">Pass Rate</p>
               </div>
 
               <div>
                 <School className="mx-auto text-amber-600 mb-3" size={40} />
-                <h3 className="text-3xl font-bold">20+</h3>
+                <h3 className="text-3xl font-bold">5+</h3>
                 <p className="text-slate-600">Years Excellence</p>
               </div>
             </div>

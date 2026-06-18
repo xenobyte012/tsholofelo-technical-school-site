@@ -1,7 +1,10 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-
+import cons from "../img/cons.jpeg"
+import elec from "../img/elec.jpg"
+import weld from "../img/weld.jpg"
+import academic from "../img/academic.webp"
 import {
   FaHammer,
   FaBolt,
@@ -20,7 +23,7 @@ const Academics = () => {
         {/* Hero Section */}
         <section className="relative h-[450px]">
           <img
-            src="/IMAGES/school-image.jpg"
+            src={academic}
             alt="Academics"
             className="absolute inset-0 w-full h-full object-cover"
           />
@@ -54,7 +57,7 @@ const Academics = () => {
               {/* Construction */}
               <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:-translate-y-2 transition-all">
                 <img
-                  src="/IMAGES/const-1.jfif"
+                  src={cons}
                   alt="Construction"
                   className="w-full h-64 object-cover"
                 />
@@ -80,7 +83,7 @@ const Academics = () => {
               {/* Electrical */}
               <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:-translate-y-2 transition-all">
                 <img
-                  src="/IMAGES/electrical-1.jfif"
+                  src={elec}
                   alt="Electrical"
                   className="w-full h-64 object-cover"
                 />
@@ -104,7 +107,7 @@ const Academics = () => {
               {/* Welding */}
               <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:-translate-y-2 transition-all">
                 <img
-                  src="/IMAGES/welding-1.jfif"
+                  src={weld}
                   alt="Welding"
                   className="w-full h-64 object-cover"
                 />

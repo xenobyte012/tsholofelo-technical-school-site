@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-
+import loc_img from "../img/loc.jpg"
 import { MapPin, Phone, Mail, Navigation } from "lucide-react";
 
 const images = [
@@ -30,7 +30,7 @@ const Location = () => {
         {/* Hero */}
         <section className="relative h-[350px]">
           <img
-            src={images[currentImage]}
+            src={loc_img}
             alt="School"
             className="absolute inset-0 h-full w-full object-cover transition-all duration-1000"
           />
@@ -70,9 +70,8 @@ const Location = () => {
                   <div>
                     <h3 className="font-semibold">Contact Numbers</h3>
 
-                    <p className="text-slate-600">063 881 9869</p>
+                    <p className="text-slate-600">064 984 2708</p>
 
-                    <p className="text-slate-600">071 345 8605</p>
                   </div>
                 </div>
 
@@ -82,7 +81,7 @@ const Location = () => {
                     <h3 className="font-semibold">Email Address</h3>
 
                     <p className="text-slate-600">
-                      tsholofelotechweb@gmail.com
+                      600105439@nwed.gov.za
                     </p>
                   </div>
                 </div>
@@ -111,52 +110,7 @@ const Location = () => {
           </div>
         </section>
 
-        {/* Gallery */}
-        <section className="bg-white py-20">
-          <div className="max-w-7xl mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold">School Gallery</h2>
 
-              <p className="text-slate-600 mt-3">
-                Explore our campus and facilities
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {images.map((image, index) => (
-                <div
-                  key={index}
-                  className="overflow-hidden rounded-2xl shadow-md"
-                >
-                  <img
-                    src={image}
-                    alt={`School ${index + 1}`}
-                    className="w-full h-64 object-cover hover:scale-110 transition duration-500"
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* CTA */}
-        <section className="bg-slate-900 py-16">
-          <div className="max-w-4xl mx-auto text-center px-4">
-            <h2 className="text-4xl font-bold text-white">Visit Our Campus</h2>
-
-            <p className="text-slate-300 mt-4">
-              We welcome parents and learners to visit our school and learn more
-              about our academic and technical programmes.
-            </p>
-
-            <a
-              href="tel:0638819869"
-              className="inline-block mt-8 bg-amber-600 text-white px-8 py-3 rounded-xl hover:bg-amber-700 transition"
-            >
-              Contact School
-            </a>
-          </div>
-        </section>
       </main>
 
       <Footer />
